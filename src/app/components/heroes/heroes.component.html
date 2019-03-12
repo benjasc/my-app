@@ -1,0 +1,29 @@
+<h1 style="margin-top: 30px">Heroes</h1>
+<hr>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let heroe of heroes; let i = index;">
+            <div class="card">
+                <img class="card-img-top" src="{{heroe.img}}">
+                <div class="card-block">
+                    <figure class="profile">
+                        <img src="{{heroe.img}}" class="profile-avatar" alt="">
+                    </figure>
+                    <h4 class="card-title mt-3">{{heroe.nombre}}</h4>
+                    <div class="meta">
+                        <a>{{heroe.casa}}</a>
+                    </div>
+
+                </div>
+                <div class="card-footer">
+                    <small>{{heroe.aparicion}}</small>
+                    <button (click)="verHeroe(i)" class="btn btn-primary float-right btn-sm">Mostar Más..</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
