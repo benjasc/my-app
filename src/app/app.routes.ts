@@ -5,7 +5,7 @@ import{HeroesComponent} from './components/heroes/heroes.component';
 import{HeroeComponent} from './components/heroe/heroe.component';
 
 const APP_ROUTES:Routes = [
-    {path: 'heroe', component: HeroeComponent},
+    {path: 'heroe/:id', component: HeroeComponent},
     {path: 'about', component: AboutComponent},
     {path: 'heroes', component: HeroesComponent},
     {path: 'home', component: HomeComponent},
